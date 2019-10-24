@@ -8,6 +8,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     unless BRANDS.include?(@brand)
+    # does not allow duplicates into BRANDS class constant
       BRANDS << @brand
     end
   
